@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Oracle Sans';
+    src: url('../assets/fonts/OracleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Oracle Sans';
+    src: url('../assets/fonts/OracleSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+  
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../assets/redwood_bg_1x.jpg);
+  }
+  
+  .oracle-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Oracle Sans', 'Roboto', Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box; /* Inclut le padding dans la hauteur */
+  }
+  
+  .login-card{
+    background: white;
+    width: 420px;
+    padding: 30px;
+    margin: 0 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .login-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #312d2a;
+    margin: 0 0 20px;
+    text-align: center;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .login-input {
+    width: 100%;
+    margin : 0px 0px 4px;
+    padding: 14px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .login-input:focus {
+    border-bottom-color: #312d2a;
+  }
+  
+  .next-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #312d2a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .forgot-link {
+    display: block;
+    text-align: center;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .signup-card {
+    background: white;
+    width: 420px;
+    padding: 30px;
+    margin: 0 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  .signup-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #312d2a;
+    margin:0 0 20px;
+    text-align: center;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: white;
+    color: #312d2a;
+    border: 1px solid #312d2a;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1px 0px;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+  
+  .footer-links span {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .footer-links span:hover {
+    text-decoration: underline;
+  }
+
+  .floating-label {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform-origin: left center;
+  }
+  
+  .floating-label.active {
+    transform: translateY(-22px) scale(0.85);
+    color: #666;
+  }
