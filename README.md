@@ -21,4 +21,4 @@ npm install
 npm run dev
 
 
-© 2023 - Projet développé pour Loaker
+© 2025 - Projet développé pour Loaker
