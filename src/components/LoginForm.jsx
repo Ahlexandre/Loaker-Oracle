@@ -1,11 +1,9 @@
-// LoginForm.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import '../assets/styles/LoginForm.css';
 
 function LoginForm() {
   const [username, setUsername] = useState('');
   const [isFocused, setIsFocused] = useState(false);
-  const [isSignupHovered, setIsSignupHovered] = useState(false);
   const [isSignupActive, setIsSignupActive] = useState(false);
   const inputRef = useRef(null);
 
@@ -13,7 +11,7 @@ function LoginForm() {
     document.title = "Connexion à Oracle";
     const favicon = document.createElement('link');
     favicon.rel = 'icon';
-    favicon.href = '/assets/images/oracle-logo-symbol-vector.png';
+    favicon.href = '../assets/images/oracle-logo-symbol-vector.png';
     document.head.appendChild(favicon);
     
     return () => {
@@ -21,8 +19,15 @@ function LoginForm() {
     };
   }, []);
 
-  const handleFocus = () => setIsFocused(true);
-  const handleBlur = () => !username && setIsFocused(false);
+  function handleFocus() {
+    setIsFocused(true);
+  }
+  
+  function handleBlur() {
+    if (!username) {
+      setIsFocused(false);
+    }
+  }
 
   return (
     <div className="oracle-login-container">

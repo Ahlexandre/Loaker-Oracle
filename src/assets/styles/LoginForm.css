@@ -130,7 +130,7 @@ body {
 
   .signup-button:active, 
   .signup-button:focus {
-      border: 1px solid #7b9674;
+      border: 2px solid #7b9674;
   }
   
   .footer-links {

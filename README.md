@@ -15,10 +15,10 @@
 
 ## 🚀 Installation
 ```bash
-git clone [lien-du-depot]
+git clone https://github.com/Ahlexandre/Loaker-Oracle
 cd [nom-du-projet]
 npm install
 npm run dev
-
+```
 
 © 2025 - Projet développé pour Loaker
