@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Oracle Sans';
-    src: url('../assets/fonts/OracleSans-Regular.ttf') format('truetype');
+    src: url('../fonts/OracleSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'Oracle Sans';
-    src: url('../assets/fonts/OracleSans-SemiBold.ttf') format('truetype');
+    src: url('../fonts/OracleSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url(../assets/redwood_bg_1x.jpg);
+    background-image: url(../images/redwood_bg_1x.jpg);
   }
   
   .oracle-login-container {
@@ -126,6 +126,11 @@ body {
     cursor: pointer;
     margin-bottom: 1px 0px;
     font-family: 'Oracle Sans', 'Roboto', sans-serif;
+  }
+
+  .signup-button:active, 
+  .signup-button:focus {
+      border: 1px solid #7b9674;
   }
   
   .footer-links {

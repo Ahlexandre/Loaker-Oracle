@@ -1,6 +1,6 @@
 // LoginForm.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import './LoginForm.css';
+import '../assets/styles/LoginForm.css';
 
 function LoginForm() {
   const [username, setUsername] = useState('');
@@ -13,7 +13,7 @@ function LoginForm() {
     document.title = "Connexion à Oracle";
     const favicon = document.createElement('link');
     favicon.rel = 'icon';
-    favicon.href = '/assets/oracle-logo-symbol-vector.png';
+    favicon.href = '/assets/images/oracle-logo-symbol-vector.png';
     document.head.appendChild(favicon);
     
     return () => {

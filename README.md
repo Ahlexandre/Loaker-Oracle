@@ -1,4 +1,4 @@
-# <img src="./src/assets/loaker_logo.jpeg" alt="Loaker" width="150"/>
+# <img src="./src/assets/images/loaker_logo.jpeg" alt="Loaker" width="150"/>
 
 **Interface de connexion Oracle**  
 *Projet développé pour Loaker*
